@@ -6,7 +6,7 @@
     <description>Recent content on Hugo Bootstrap v4 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 26 Oct 2019 12:12:16 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 26 Oct 2019 13:01:04 +0800</lastBuildDate>
     
 	<atom:link href="https://jiakuanzhu.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -30,6 +30,39 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
       <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
 ▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
 ▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+    </item>
+    
+    <item>
+      <title>AlgsChap1</title>
+      <link>https://jiakuanzhu.github.io/2019/10/algschap1/</link>
+      <pubDate>Sat, 26 Oct 2019 13:01:04 +0800</pubDate>
+      
+      <guid>https://jiakuanzhu.github.io/2019/10/algschap1/</guid>
+      <description>约定
+ 选择排序
+ 冒泡排序
+ 插入排序
+ 希尔排序
+ 归并排序
+ 1. 归并方法
+ 2. 自顶向下归并排序
+ 3. 自底向上归并排序
+  快速排序
+ 1. 基本算法
+ 2. 切分
+ 3. 性能分析
+ 4. 算法改进
+ 5. 基于切分的快速选择算法
+  堆排序
+ 1. 堆
+ 2. 上浮和下沉
+ 3. 插入元素
+ 4. 删除最大元素
+ 5. 堆排序
+ 6. 分析
+  小结
+ 1. 排序算法的比较
+ 2. Java 的排序算法实现</description>
     </item>
     
     <item>
