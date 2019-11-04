@@ -6,7 +6,7 @@
     <description>Recent content in Posts on Hugo Bootstrap v4 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 26 Oct 2019 13:01:04 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 04 Nov 2019 14:51:50 +0800</lastBuildDate>
     
 	<atom:link href="https://jiakuanzhu.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
@@ -30,6 +30,18 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
       <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
 ▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
 ▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+    </item>
+    
+    <item>
+      <title>AlgsChap2</title>
+      <link>https://jiakuanzhu.github.io/2019/11/algschap2/</link>
+      <pubDate>Mon, 04 Nov 2019 14:51:50 +0800</pubDate>
+      
+      <guid>https://jiakuanzhu.github.io/2019/11/algschap2/</guid>
+      <description>约定 选择排序 冒泡排序 插入排序 希尔排序 归并排序  1. 归并方法 2. 自顶向下归并排序 3. 自底向上归并排序  快速排序  1. 基本算法 2. 切分 3. 性能分析 4. 算法改进 5. 基于切分的快速选择算法  堆排序  1. 堆 2. 上浮和下沉 3. 插入元素 4. 删除最大元素 5. 堆排序 6. 分析  小结  1. 排序算法的比较 2. Java 的排序算法实现    约定 待排序的元素需要实现 Java 的 Comparable 接口，该接口有 compareTo() 方法，可以用它来判断两个元素的大小关系。
+使用辅助函数 less() 和 swap() 来进行比较和交换的操作，使得代码的可读性和可移植性更好。
+排序算法的成本模型是比较和交换的次数。
+public abstract class Sort&amp;lt;T extends Comparable&amp;lt;T&amp;gt;&amp;gt; { public abstract void sort(T[] nums); protected boolean less(T v, T w) { return v.</description>
     </item>
     
     <item>
@@ -113,6 +125,21 @@ More complete instructions are available at installing hugo
 Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
 Follow the following steps:
  Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jiakuanzhu.github.io/1/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jiakuanzhu.github.io/1/01/</guid>
+      <description>约定 待排序的元素需要实现 Java 的 Comparable 接口，该接口有 compareTo() 方法，可以用它来判断两个元素的大小关系。
+使用辅助函数 less() 和 swap() 来进行比较和交换的操作，使得代码的可读性和可移植性更好。
+排序算法的成本模型是比较和交换的次数。
+public abstract class Sort&amp;lt;T extends Comparable&amp;lt;T&amp;gt;&amp;gt; { public abstract void sort(T[] nums); protected boolean less(T v, T w) { return v.compareTo(w) &amp;lt; 0; } protected void swap(T[] a, int i, int j) { T t = a[i]; a[i] = a[j]; a[j] = t; } }  选择排序 从数组中选择最小元素，将它与数组的第一个元素交换位置。再从数组剩下的元素中选择出最小的元素，将它与数组的第二个元素交换位置。不断进行这样的操作，直到将整个数组排序。
+选择排序需要 ~N2/2 次比较和 ~N 次交换，它的运行时间与输入无关，这个特点使得它对一个已经排序的数组也需要这么多的比较和交换操作。
+
+public class Selection&amp;lt;T extends Comparable&amp;lt;T&amp;gt;&amp;gt; extends Sort&amp;lt;T&amp;gt; { @Override public void sort(T[] nums) { int N = nums.</description>
     </item>
     
   </channel>

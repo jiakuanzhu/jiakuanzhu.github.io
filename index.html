@@ -10,7 +10,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jiakuanzhu.github.io/" />
 
-<meta property="og:updated_time" content="2019-10-26T13:01:04+08:00" />
+<meta property="og:updated_time" content="2019-11-04T14:51:50+08:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Hugo Bootstrap v4 Blog"/>
@@ -29,7 +29,7 @@
     "@type": "Person",
     "name": "Your Name"
   },
-  "dateModified": "2019-10-26T13:01:04+08:00",
+  "dateModified": "2019-11-04T14:51:50+08:00",
   "keywords": "development,golang,development,go,golang,hugo,templates,themes,",
   "description": "A simple Hugo theme based on the Bootstrap v4 blog example."
 }
@@ -124,6 +124,23 @@ We&rsquo;ll start with creating a new site with a very basic template.
 
 <article class="blog-post">
   <header>
+    <h2 class="blog-post-title" dir="auto"><a href="https://jiakuanzhu.github.io/2019/11/algschap2/">AlgsChap2</a></h2>
+    <p class="blog-post-meta"><time datetime="2019-11-04T14:51:50&#43;08:00">Mon Nov 04, 2019</time> by Your Name</p>
+  </header>
+  约定 选择排序 冒泡排序 插入排序 希尔排序 归并排序  1. 归并方法 2. 自顶向下归并排序 3. 自底向上归并排序  快速排序  1. 基本算法 2. 切分 3. 性能分析 4. 算法改进 5. 基于切分的快速选择算法  堆排序  1. 堆 2. 上浮和下沉 3. 插入元素 4. 删除最大元素 5. 堆排序 6. 分析  小结  1. 排序算法的比较 2. Java 的排序算法实现    约定 待排序的元素需要实现 Java 的 Comparable 接口，该接口有 compareTo() 方法，可以用它来判断两个元素的大小关系。
+使用辅助函数 less() 和 swap() 来进行比较和交换的操作，使得代码的可读性和可移植性更好。
+排序算法的成本模型是比较和交换的次数。
+public abstract class Sort&lt;T extends Comparable&lt;T&gt;&gt; { public abstract void sort(T[] nums); protected boolean less(T v, T w) { return v.
+  <a href='https://jiakuanzhu.github.io/2019/11/algschap2/'>Read more →</a>
+</article> 
+
+
+
+
+
+
+<article class="blog-post">
+  <header>
     <h2 class="blog-post-title" dir="auto"><a href="https://jiakuanzhu.github.io/2019/10/algschap1/">AlgsChap1</a></h2>
     <p class="blog-post-meta"><time datetime="2019-10-26T13:01:04&#43;08:00">Sat Oct 26, 2019</time> by Your Name</p>
   </header>
@@ -190,27 +207,6 @@ We&rsquo;ll start with creating a new site with a very basic template.
 
 
 
-
-<article class="blog-post">
-  <header>
-    <h2 class="blog-post-title" dir="auto"><a href="https://jiakuanzhu.github.io/2014/04/hugo-template-primer/">(Hu)go Template Primer</a></h2>
-    <p class="blog-post-meta"><time datetime="2014-04-02T00:00:00Z">Wed Apr 02, 2014</time> by Your Name in 
-<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/development" rel="category tag">Development</a>, <a href="/categories/golang" rel="category tag">golang</a>
-
-
-<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/go" rel="tag">go</a>, <a href="/tags/golang" rel="tag">golang</a>, <a href="/tags/templates" rel="tag">templates</a>, <a href="/tags/themes" rel="tag">themes</a>, <a href="/tags/development" rel="tag">development</a>
-
-</p>
-  </header>
-  Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
-This document is a brief primer on using go templates.
-  <a href='https://jiakuanzhu.github.io/2014/04/hugo-template-primer/'>Read more →</a>
-</article> 
-
-
-
-
-
 <nav class="blog-pagination">
   
   
@@ -244,11 +240,11 @@ This document is a brief primer on using go templates.
 
 <li><a href="/2014/03/migrate-to-hugo-from-jekyll/">Migrate to Hugo from Jekyll</a></li>
 
+<li><a href="/2019/11/algschap2/">AlgsChap2</a></li>
+
 <li><a href="/2019/10/algschap1/">AlgsChap1</a></li>
 
 <li><a href="/2019/10/model/">Model</a></li>
-
-<li><a href="/2014/04/hugo-template-primer/">(Hu)go Template Primer</a></li>
 
     </ol>
   </section>

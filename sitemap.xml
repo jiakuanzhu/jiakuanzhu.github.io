@@ -13,17 +13,22 @@
   </url>
   
   <url>
-    <loc>https://jiakuanzhu.github.io/2019/10/algschap1/</loc>
-    <lastmod>2019-10-26T13:01:04+08:00</lastmod>
+    <loc>https://jiakuanzhu.github.io/2019/11/algschap2/</loc>
+    <lastmod>2019-11-04T14:51:50+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://jiakuanzhu.github.io/</loc>
-    <lastmod>2019-10-26T13:01:04+08:00</lastmod>
+    <lastmod>2019-11-04T14:51:50+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://jiakuanzhu.github.io/post/</loc>
+    <lastmod>2019-11-04T14:51:50+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jiakuanzhu.github.io/2019/10/algschap1/</loc>
     <lastmod>2019-10-26T13:01:04+08:00</lastmod>
   </url>
   
@@ -90,6 +95,11 @@
   <url>
     <loc>https://jiakuanzhu.github.io/tags/themes/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jiakuanzhu.github.io/1/01/</loc>
+    <priority>0</priority>
   </url>
   
 </urlset>

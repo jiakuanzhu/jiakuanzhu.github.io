@@ -10,7 +10,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jiakuanzhu.github.io/post/" />
 
-<meta property="og:updated_time" content="2019-10-26T13:01:04+08:00" />
+<meta property="og:updated_time" content="2019-11-04T14:51:50+08:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Posts"/>
@@ -29,7 +29,7 @@
     "@type": "Person",
     "name": "Your Name"
   },
-  "dateModified": "2019-10-26T13:01:04+08:00",
+  "dateModified": "2019-11-04T14:51:50+08:00",
   "keywords": "development,golang,development,go,golang,hugo,templates,themes,",
   "description": "A simple Hugo theme based on the Bootstrap v4 blog example."
 }
@@ -93,6 +93,27 @@
 
 <article class="blog-post">
   <header>
+    <h2 class="blog-post-title" dir="auto"><a href="https://jiakuanzhu.github.io/2014/04/hugo-template-primer/">(Hu)go Template Primer</a></h2>
+    <p class="blog-post-meta"><time datetime="2014-04-02T00:00:00Z">Wed Apr 02, 2014</time> by Your Name in 
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/development" rel="category tag">Development</a>, <a href="/categories/golang" rel="category tag">golang</a>
+
+
+<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<a href="/tags/go" rel="tag">go</a>, <a href="/tags/golang" rel="tag">golang</a>, <a href="/tags/templates" rel="tag">templates</a>, <a href="/tags/themes" rel="tag">themes</a>, <a href="/tags/development" rel="tag">development</a>
+
+</p>
+  </header>
+  Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
+This document is a brief primer on using go templates.
+  <a href='https://jiakuanzhu.github.io/2014/04/hugo-template-primer/'>Read more →</a>
+</article> 
+
+
+
+
+
+
+<article class="blog-post">
+  <header>
     <h2 class="blog-post-title" dir="auto"><a href="https://jiakuanzhu.github.io/2014/04/getting-started-with-hugo/">Getting Started with Hugo</a></h2>
     <p class="blog-post-meta"><time datetime="2014-04-02T00:00:00Z">Wed Apr 02, 2014</time> by Your Name in 
 <i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/development" rel="category tag">Development</a>, <a href="/categories/golang" rel="category tag">golang</a>
@@ -109,6 +130,26 @@ Step 2. Build the Docs Hugo has its own example site which happens to also be th
 Follow the following steps:
  Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:
   <a href='https://jiakuanzhu.github.io/2014/04/getting-started-with-hugo/'>Read more →</a>
+</article> 
+
+
+
+
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title" dir="auto"><a href="https://jiakuanzhu.github.io/1/01/"></a></h2>
+    <p class="blog-post-meta"><time datetime="0001-01-01T00:00:00Z">Mon Jan 01, 0001</time> by Your Name</p>
+  </header>
+  约定 待排序的元素需要实现 Java 的 Comparable 接口，该接口有 compareTo() 方法，可以用它来判断两个元素的大小关系。
+使用辅助函数 less() 和 swap() 来进行比较和交换的操作，使得代码的可读性和可移植性更好。
+排序算法的成本模型是比较和交换的次数。
+public abstract class Sort&lt;T extends Comparable&lt;T&gt;&gt; { public abstract void sort(T[] nums); protected boolean less(T v, T w) { return v.compareTo(w) &lt; 0; } protected void swap(T[] a, int i, int j) { T t = a[i]; a[i] = a[j]; a[j] = t; } }  选择排序 从数组中选择最小元素，将它与数组的第一个元素交换位置。再从数组剩下的元素中选择出最小的元素，将它与数组的第二个元素交换位置。不断进行这样的操作，直到将整个数组排序。
+选择排序需要 ~N2/2 次比较和 ~N 次交换，它的运行时间与输入无关，这个特点使得它对一个已经排序的数组也需要这么多的比较和交换操作。
+
+public class Selection&lt;T extends Comparable&lt;T&gt;&gt; extends Sort&lt;T&gt; { @Override public void sort(T[] nums) { int N = nums.
+  <a href='https://jiakuanzhu.github.io/1/01/'>Read more →</a>
 </article> 
 
 
@@ -148,11 +189,11 @@ Follow the following steps:
 
 <li><a href="/2014/03/migrate-to-hugo-from-jekyll/">Migrate to Hugo from Jekyll</a></li>
 
+<li><a href="/2019/11/algschap2/">AlgsChap2</a></li>
+
 <li><a href="/2019/10/algschap1/">AlgsChap1</a></li>
 
 <li><a href="/2019/10/model/">Model</a></li>
-
-<li><a href="/2014/04/hugo-template-primer/">(Hu)go Template Primer</a></li>
 
     </ol>
   </section>

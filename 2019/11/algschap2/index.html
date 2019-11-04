@@ -5,64 +5,22 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<meta property="og:title" content="AlgsChap1" />
-<meta property="og:description" content="约定
- 选择排序
- 冒泡排序
- 插入排序
- 希尔排序
- 归并排序
- 1. 归并方法
- 2. 自顶向下归并排序
- 3. 自底向上归并排序
-  快速排序
- 1. 基本算法
- 2. 切分
- 3. 性能分析
- 4. 算法改进
- 5. 基于切分的快速选择算法
-  堆排序
- 1. 堆
- 2. 上浮和下沉
- 3. 插入元素
- 4. 删除最大元素
- 5. 堆排序
- 6. 分析
-  小结
- 1. 排序算法的比较
- 2. Java 的排序算法实现" />
+<meta property="og:title" content="AlgsChap2" />
+<meta property="og:description" content="约定 选择排序 冒泡排序 插入排序 希尔排序 归并排序  1. 归并方法 2. 自顶向下归并排序 3. 自底向上归并排序  快速排序  1. 基本算法 2. 切分 3. 性能分析 4. 算法改进 5. 基于切分的快速选择算法  堆排序  1. 堆 2. 上浮和下沉 3. 插入元素 4. 删除最大元素 5. 堆排序 6. 分析  小结  1. 排序算法的比较 2. Java 的排序算法实现    约定 待排序的元素需要实现 Java 的 Comparable 接口，该接口有 compareTo() 方法，可以用它来判断两个元素的大小关系。
+使用辅助函数 less() 和 swap() 来进行比较和交换的操作，使得代码的可读性和可移植性更好。
+排序算法的成本模型是比较和交换的次数。
+public abstract class Sort&lt;T extends Comparable&lt;T&gt;&gt; { public abstract void sort(T[] nums); protected boolean less(T v, T w) { return v." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://jiakuanzhu.github.io/2019/10/algschap1/" />
-<meta property="article:published_time" content="2019-10-26T13:01:04+08:00" />
-<meta property="article:modified_time" content="2019-10-26T13:01:04+08:00" />
+<meta property="og:url" content="https://jiakuanzhu.github.io/2019/11/algschap2/" />
+<meta property="article:published_time" content="2019-11-04T14:51:50+08:00" />
+<meta property="article:modified_time" content="2019-11-04T14:51:50+08:00" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="AlgsChap1"/>
-<meta name="twitter:description" content="约定
- 选择排序
- 冒泡排序
- 插入排序
- 希尔排序
- 归并排序
- 1. 归并方法
- 2. 自顶向下归并排序
- 3. 自底向上归并排序
-  快速排序
- 1. 基本算法
- 2. 切分
- 3. 性能分析
- 4. 算法改进
- 5. 基于切分的快速选择算法
-  堆排序
- 1. 堆
- 2. 上浮和下沉
- 3. 插入元素
- 4. 删除最大元素
- 5. 堆排序
- 6. 分析
-  小结
- 1. 排序算法的比较
- 2. Java 的排序算法实现"/>
+<meta name="twitter:title" content="AlgsChap2"/>
+<meta name="twitter:description" content="约定 选择排序 冒泡排序 插入排序 希尔排序 归并排序  1. 归并方法 2. 自顶向下归并排序 3. 自底向上归并排序  快速排序  1. 基本算法 2. 切分 3. 性能分析 4. 算法改进 5. 基于切分的快速选择算法  堆排序  1. 堆 2. 上浮和下沉 3. 插入元素 4. 删除最大元素 5. 堆排序 6. 分析  小结  1. 排序算法的比较 2. Java 的排序算法实现    约定 待排序的元素需要实现 Java 的 Comparable 接口，该接口有 compareTo() 方法，可以用它来判断两个元素的大小关系。
+使用辅助函数 less() 和 swap() 来进行比较和交换的操作，使得代码的可读性和可移植性更好。
+排序算法的成本模型是比较和交换的次数。
+public abstract class Sort&lt;T extends Comparable&lt;T&gt;&gt; { public abstract void sort(T[] nums); protected boolean less(T v, T w) { return v."/>
 <meta name="generator" content="Hugo 0.59.0" />
 
 
@@ -71,11 +29,11 @@
 {
   "@context": "http://schema.org",
   "@type": "BlogPosting",
-  "headline": "AlgsChap1",
-  "url": "https:\/\/jiakuanzhu.github.io\/2019\/10\/algschap1\/",
-  "wordCount": "1463",
-  "datePublished": "2019-10-26T13:01:04+08:00",
-  "dateModified": "2019-10-26T13:01:04+08:00",
+  "headline": "AlgsChap2",
+  "url": "https:\/\/jiakuanzhu.github.io\/2019\/11\/algschap2\/",
+  "wordCount": "1401",
+  "datePublished": "2019-11-04T14:51:50+08:00",
+  "dateModified": "2019-11-04T14:51:50+08:00",
   "author": {
     "@type": "Person",
     "name": "Your Name"
@@ -85,9 +43,9 @@
 
 
 
-    <link rel="canonical" href="https://jiakuanzhu.github.io/2019/10/algschap1/">
+    <link rel="canonical" href="https://jiakuanzhu.github.io/2019/11/algschap2/">
 
-    <title>AlgsChap1 | Hugo Bootstrap v4 Blog</title>
+    <title>AlgsChap2 | Hugo Bootstrap v4 Blog</title>
 
     
     <!-- combined, minified CSS -->
@@ -136,74 +94,53 @@
 
 <article class="blog-post">
   <header>
-    <h2 class="blog-post-title" dir="auto"><a href="https://jiakuanzhu.github.io/2019/10/algschap1/">AlgsChap1</a></h2>
-    <p class="blog-post-meta"><time datetime="2019-10-26T13:01:04&#43;08:00">Sat Oct 26, 2019</time> by Your Name</p>
+    <h2 class="blog-post-title" dir="auto"><a href="https://jiakuanzhu.github.io/2019/11/algschap2/">AlgsChap2</a></h2>
+    <p class="blog-post-meta"><time datetime="2019-11-04T14:51:50&#43;08:00">Mon Nov 04, 2019</time> by Your Name</p>
   </header>
   
 
 <!-- GFM-TOC -->
 
 <ul>
-<li><p><a href="#约定">约定</a></p></li>
-
-<li><p><a href="#选择排序">选择排序</a></p></li>
-
-<li><p><a href="#冒泡排序">冒泡排序</a></p></li>
-
-<li><p><a href="#插入排序">插入排序</a></p></li>
-
-<li><p><a href="#希尔排序">希尔排序</a></p></li>
-
-<li><p><a href="#归并排序">归并排序</a></p>
+<li><a href="#约定">约定</a></li>
+<li><a href="#选择排序">选择排序</a></li>
+<li><a href="#冒泡排序">冒泡排序</a></li>
+<li><a href="#插入排序">插入排序</a></li>
+<li><a href="#希尔排序">希尔排序</a></li>
+<li><a href="#归并排序">归并排序</a>
 
 <ul>
-<li><p><a href="#1-归并方法">1. 归并方法</a></p></li>
-
-<li><p><a href="#2-自顶向下归并排序">2. 自顶向下归并排序</a></p></li>
-
-<li><p><a href="#3-自底向上归并排序">3. 自底向上归并排序</a></p></li>
+<li><a href="#1-归并方法">1. 归并方法</a></li>
+<li><a href="#2-自顶向下归并排序">2. 自顶向下归并排序</a></li>
+<li><a href="#3-自底向上归并排序">3. 自底向上归并排序</a></li>
 </ul></li>
-
-<li><p><a href="#快速排序">快速排序</a></p>
+<li><a href="#快速排序">快速排序</a>
 
 <ul>
-<li><p><a href="#1-基本算法">1. 基本算法</a></p></li>
-
-<li><p><a href="#2-切分">2. 切分</a></p></li>
-
-<li><p><a href="#3-性能分析">3. 性能分析</a></p></li>
-
-<li><p><a href="#4-算法改进">4. 算法改进</a></p></li>
-
-<li><p><a href="#5-基于切分的快速选择算法">5. 基于切分的快速选择算法</a></p></li>
+<li><a href="#1-基本算法">1. 基本算法</a></li>
+<li><a href="#2-切分">2. 切分</a></li>
+<li><a href="#3-性能分析">3. 性能分析</a></li>
+<li><a href="#4-算法改进">4. 算法改进</a></li>
+<li><a href="#5-基于切分的快速选择算法">5. 基于切分的快速选择算法</a></li>
 </ul></li>
-
-<li><p><a href="#堆排序">堆排序</a></p>
+<li><a href="#堆排序">堆排序</a>
 
 <ul>
-<li><p><a href="#1-堆">1. 堆</a></p></li>
-
-<li><p><a href="#2-上浮和下沉">2. 上浮和下沉</a></p></li>
-
-<li><p><a href="#3-插入元素">3. 插入元素</a></p></li>
-
-<li><p><a href="#4-删除最大元素">4. 删除最大元素</a></p></li>
-
-<li><p><a href="#5-堆排序">5. 堆排序</a></p></li>
-
-<li><p><a href="#6-分析">6. 分析</a></p></li>
+<li><a href="#1-堆">1. 堆</a></li>
+<li><a href="#2-上浮和下沉">2. 上浮和下沉</a></li>
+<li><a href="#3-插入元素">3. 插入元素</a></li>
+<li><a href="#4-删除最大元素">4. 删除最大元素</a></li>
+<li><a href="#5-堆排序">5. 堆排序</a></li>
+<li><a href="#6-分析">6. 分析</a></li>
 </ul></li>
-
-<li><p><a href="#小结">小结</a></p>
+<li><a href="#小结">小结</a>
 
 <ul>
-<li><p><a href="#1-排序算法的比较">1. 排序算法的比较</a></p></li>
-
-<li><p><a href="#2-java-的排序算法实现">2. Java 的排序算法实现</a></p></li>
+<li><a href="#1-排序算法的比较">1. 排序算法的比较</a></li>
+<li><a href="#2-java-的排序算法实现">2. Java 的排序算法实现</a>
+<!-- GFM-TOC --></li>
 </ul></li>
 </ul>
-
-<!-- GFM-TOC -->
 
 <h1 id="约定">约定</h1>
 
@@ -213,35 +150,20 @@
 
 <p>排序算法的成本模型是比较和交换的次数。</p>
 
-<pre><code class="language-java">
-public abstract class Sort&lt;T extends Comparable&lt;T&gt;&gt; {
-
-
+<pre><code class="language-java">public abstract class Sort&lt;T extends Comparable&lt;T&gt;&gt; {
 
     public abstract void sort(T[] nums);
 
-
-
     protected boolean less(T v, T w) {
-
         return v.compareTo(w) &lt; 0;
-
     }
-
-
 
     protected void swap(T[] a, int i, int j) {
-
         T t = a[i];
-
         a[i] = a[j];
-
         a[j] = t;
-
     }
-
 }
-
 </code></pre>
 
 <h1 id="选择排序">选择排序</h1>
@@ -250,41 +172,24 @@ public abstract class Sort&lt;T extends Comparable&lt;T&gt;&gt; {
 
 <p>选择排序需要 ~N<sup>2</sup>/2 次比较和 ~N 次交换，它的运行时间与输入无关，这个特点使得它对一个已经排序的数组也需要这么多的比较和交换操作。</p>
 
-<p><div align="center"> <img src="pics/bc6be2d0-ed5e-4def-89e5-3ada9afa811a.gif" width="230px"> </div><br></p>
+<p><div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/bc6be2d0-ed5e-4def-89e5-3ada9afa811a.gif" width="230px"> </div><br></p>
 
-<pre><code class="language-java">
-public class Selection&lt;T extends Comparable&lt;T&gt;&gt; extends Sort&lt;T&gt; {
-
-
+<pre><code class="language-java">public class Selection&lt;T extends Comparable&lt;T&gt;&gt; extends Sort&lt;T&gt; {
 
     @Override
-
     public void sort(T[] nums) {
-
         int N = nums.length;
-
         for (int i = 0; i &lt; N - 1; i++) {
-
             int min = i;
-
             for (int j = i + 1; j &lt; N; j++) {
-
                 if (less(nums[j], nums[min])) {
-
                     min = j;
-
                 }
-
             }
-
             swap(nums, i, min);
-
         }
-
     }
-
 }
-
 </code></pre>
 
 <h1 id="冒泡排序">冒泡排序</h1>
@@ -293,43 +198,25 @@ public class Selection&lt;T extends Comparable&lt;T&gt;&gt; extends Sort&lt;T&gt
 
 <p>在一轮循环中，如果没有发生交换，那么说明数组已经是有序的，此时可以直接退出。</p>
 
-<p><div align="center"> <img src="pics/0f8d178b-52d8-491b-9dfd-41e05a952578.gif" width="200px"> </div><br></p>
+<p><div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/0f8d178b-52d8-491b-9dfd-41e05a952578.gif" width="200px"> </div><br></p>
 
-<pre><code class="language-java">
-public class Bubble&lt;T extends Comparable&lt;T&gt;&gt; extends Sort&lt;T&gt; {
-
-
+<pre><code class="language-java">public class Bubble&lt;T extends Comparable&lt;T&gt;&gt; extends Sort&lt;T&gt; {
 
     @Override
-
     public void sort(T[] nums) {
-
         int N = nums.length;
-
         boolean isSorted = false;
-
         for (int i = N - 1; i &gt; 0 &amp;&amp; !isSorted; i--) {
-
             isSorted = true;
-
             for (int j = 0; j &lt; i; j++) {
-
                 if (less(nums[j + 1], nums[j])) {
-
                     isSorted = false;
-
                     swap(nums, j, j + 1);
-
                 }
-
             }
-
         }
-
     }
-
 }
-
 </code></pre>
 
 <h1 id="插入排序">插入排序</h1>
@@ -341,40 +228,25 @@ public class Bubble&lt;T extends Comparable&lt;T&gt;&gt; extends Sort&lt;T&gt; {
 <p>插入排序的时间复杂度取决于数组的初始顺序，如果数组已经部分有序了，那么逆序较少，需要的交换次数也就较少，时间复杂度较低。</p>
 
 <ul>
-<li><p>平均情况下插入排序需要 ~N<sup>2</sup>/4 比较以及 ~N<sup>2</sup>/4 次交换；</p></li>
-
-<li><p>最坏的情况下需要 ~N<sup>2</sup>/2 比较以及 ~N<sup>2</sup>/2 次交换，最坏的情况是数组是倒序的；</p></li>
-
-<li><p>最好的情况下需要 N-1 次比较和 0 次交换，最好的情况就是数组已经有序了。</p></li>
+<li>平均情况下插入排序需要 ~N<sup>2</sup>/4 比较以及 ~N<sup>2</sup>/4 次交换；</li>
+<li>最坏的情况下需要 ~N<sup>2</sup>/2 比较以及 ~N<sup>2</sup>/2 次交换，最坏的情况是数组是倒序的；</li>
+<li>最好的情况下需要 N-1 次比较和 0 次交换，最好的情况就是数组已经有序了。</li>
 </ul>
 
-<p><div align="center"> <img src="pics/35253fa4-f60a-4e3b-aaec-8fc835aabdac.gif" width="200px"> </div><br></p>
+<p><div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/35253fa4-f60a-4e3b-aaec-8fc835aabdac.gif" width="200px"> </div><br></p>
 
-<pre><code class="language-java">
-public class Insertion&lt;T extends Comparable&lt;T&gt;&gt; extends Sort&lt;T&gt; {
-
-
+<pre><code class="language-java">public class Insertion&lt;T extends Comparable&lt;T&gt;&gt; extends Sort&lt;T&gt; {
 
     @Override
-
     public void sort(T[] nums) {
-
         int N = nums.length;
-
         for (int i = 1; i &lt; N; i++) {
-
             for (int j = i; j &gt; 0 &amp;&amp; less(nums[j], nums[j - 1]); j--) {
-
                 swap(nums, j, j - 1);
-
             }
-
         }
-
     }
-
 }
-
 </code></pre>
 
 <h1 id="希尔排序">希尔排序</h1>
@@ -383,54 +255,30 @@ public class Insertion&lt;T extends Comparable&lt;T&gt;&gt; extends Sort&lt;T&gt
 
 <p>希尔排序使用插入排序对间隔 h 的序列进行排序。通过不断减小 h，最后令 h=1，就可以使得整个数组是有序的。</p>
 
-<p><div align="center"> <img src="pics/7818c574-97a8-48db-8e62-8bfb030b02ba.png" width="450px"> </div><br></p>
+<p><div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/7818c574-97a8-48db-8e62-8bfb030b02ba.png" width="450px"> </div><br></p>
 
-<pre><code class="language-java">
-public class Shell&lt;T extends Comparable&lt;T&gt;&gt; extends Sort&lt;T&gt; {
-
-
+<pre><code class="language-java">public class Shell&lt;T extends Comparable&lt;T&gt;&gt; extends Sort&lt;T&gt; {
 
     @Override
-
     public void sort(T[] nums) {
 
-
-
         int N = nums.length;
-
         int h = 1;
 
-
-
         while (h &lt; N / 3) {
-
             h = 3 * h + 1; // 1, 4, 13, 40, ...
-
         }
-
-
 
         while (h &gt;= 1) {
-
             for (int i = h; i &lt; N; i++) {
-
                 for (int j = i; j &gt;= h &amp;&amp; less(nums[j], nums[j - h]); j -= h) {
-
                     swap(nums, j, j - h);
-
                 }
-
             }
-
             h = h / 3;
-
         }
-
     }
-
 }
-
-
 
 </code></pre>
 
@@ -440,71 +288,41 @@ public class Shell&lt;T extends Comparable&lt;T&gt;&gt; extends Sort&lt;T&gt; {
 
 <p>归并排序的思想是将数组分成两部分，分别进行排序，然后归并起来。</p>
 
-<p><div align="center"> <img src="pics/ec840967-d127-4da3-b6bb-186996c56746.png" width="300px"> </div><br></p>
+<p><div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/ec840967-d127-4da3-b6bb-186996c56746.png" width="300px"> </div><br></p>
 
 <h2 id="1-归并方法">1. 归并方法</h2>
 
 <p>归并方法将数组中两个已经排序的部分归并成一个。</p>
 
-<pre><code class="language-java">
-public abstract class MergeSort&lt;T extends Comparable&lt;T&gt;&gt; extends Sort&lt;T&gt; {
-
-
+<pre><code class="language-java">public abstract class MergeSort&lt;T extends Comparable&lt;T&gt;&gt; extends Sort&lt;T&gt; {
 
     protected T[] aux;
 
 
-
-
-
     protected void merge(T[] nums, int l, int m, int h) {
-
-
 
         int i = l, j = m + 1;
 
-
-
         for (int k = l; k &lt;= h; k++) {
-
             aux[k] = nums[k]; // 将数据复制到辅助数组
-
         }
 
-
-
         for (int k = l; k &lt;= h; k++) {
-
             if (i &gt; m) {
-
                 nums[k] = aux[j++];
-
-
 
             } else if (j &gt; h) {
-
                 nums[k] = aux[i++];
 
-
-
             } else if (aux[i].compareTo(aux[j]) &lt;= 0) {
-
                 nums[k] = aux[i++]; // 先进行这一步，保证稳定性
 
-
-
             } else {
-
                 nums[k] = aux[j++];
-
             }
-
         }
-
     }
-
 }
-
 </code></pre>
 
 <h2 id="2-自顶向下归并排序">2. 自顶向下归并排序</h2>
@@ -513,81 +331,45 @@ public abstract class MergeSort&lt;T extends Comparable&lt;T&gt;&gt; extends Sor
 
 <p>因为每次都将问题对半分成两个子问题，这种对半分的算法复杂度一般为 O(NlogN)。</p>
 
-<pre><code class="language-java">
-public class Up2DownMergeSort&lt;T extends Comparable&lt;T&gt;&gt; extends MergeSort&lt;T&gt; {
-
-
+<pre><code class="language-java">public class Up2DownMergeSort&lt;T extends Comparable&lt;T&gt;&gt; extends MergeSort&lt;T&gt; {
 
     @Override
-
     public void sort(T[] nums) {
-
         aux = (T[]) new Comparable[nums.length];
-
         sort(nums, 0, nums.length - 1);
-
     }
-
-
 
     private void sort(T[] nums, int l, int h) {
-
         if (h &lt;= l) {
-
             return;
-
         }
-
         int mid = l + (h - l) / 2;
-
         sort(nums, l, mid);
-
         sort(nums, mid + 1, h);
-
         merge(nums, l, mid, h);
-
     }
-
 }
-
 </code></pre>
 
 <h2 id="3-自底向上归并排序">3. 自底向上归并排序</h2>
 
 <p>先归并那些微型数组，然后成对归并得到的微型数组。</p>
 
-<pre><code class="language-java">
-public class Down2UpMergeSort&lt;T extends Comparable&lt;T&gt;&gt; extends MergeSort&lt;T&gt; {
-
-
+<pre><code class="language-java">public class Down2UpMergeSort&lt;T extends Comparable&lt;T&gt;&gt; extends MergeSort&lt;T&gt; {
 
     @Override
-
     public void sort(T[] nums) {
 
-
-
         int N = nums.length;
-
         aux = (T[]) new Comparable[N];
 
-
-
         for (int sz = 1; sz &lt; N; sz += sz) {
-
             for (int lo = 0; lo &lt; N - sz; lo += sz + sz) {
-
                 merge(nums, lo, lo + sz - 1, Math.min(lo + sz + sz - 1, N - 1));
-
             }
-
         }
-
     }
-
 }
-
-
 
 </code></pre>
 
@@ -596,93 +378,55 @@ public class Down2UpMergeSort&lt;T extends Comparable&lt;T&gt;&gt; extends Merge
 <h2 id="1-基本算法">1. 基本算法</h2>
 
 <ul>
-<li><p>归并排序将数组分为两个子数组分别排序，并将有序的子数组归并使得整个数组排序；</p></li>
-
-<li><p>快速排序通过一个切分元素将数组分为两个子数组，左子数组小于等于切分元素，右子数组大于等于切分元素，将这两个子数组排序也就将整个数组排序了。</p></li>
+<li>归并排序将数组分为两个子数组分别排序，并将有序的子数组归并使得整个数组排序；</li>
+<li>快速排序通过一个切分元素将数组分为两个子数组，左子数组小于等于切分元素，右子数组大于等于切分元素，将这两个子数组排序也就将整个数组排序了。</li>
 </ul>
 
-<p><div align="center"> <img src="pics/6234eb3d-ccf2-4987-a724-235aef6957b1.png" width="280px"> </div><br></p>
+<p><div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/6234eb3d-ccf2-4987-a724-235aef6957b1.png" width="280px"> </div><br></p>
 
-<pre><code class="language-java">
-public class QuickSort&lt;T extends Comparable&lt;T&gt;&gt; extends Sort&lt;T&gt; {
-
-
+<pre><code class="language-java">public class QuickSort&lt;T extends Comparable&lt;T&gt;&gt; extends Sort&lt;T&gt; {
 
     @Override
-
     public void sort(T[] nums) {
-
         shuffle(nums);
-
         sort(nums, 0, nums.length - 1);
-
     }
-
-
 
     private void sort(T[] nums, int l, int h) {
-
         if (h &lt;= l)
-
             return;
-
         int j = partition(nums, l, h);
-
         sort(nums, l, j - 1);
-
         sort(nums, j + 1, h);
-
     }
-
-
 
     private void shuffle(T[] nums) {
-
         List&lt;Comparable&gt; list = Arrays.asList(nums);
-
         Collections.shuffle(list);
-
         list.toArray(nums);
-
     }
-
 }
-
 </code></pre>
 
 <h2 id="2-切分">2. 切分</h2>
 
 <p>取 a[l] 作为切分元素，然后从数组的左端向右扫描直到找到第一个大于等于它的元素，再从数组的右端向左扫描找到第一个小于它的元素，交换这两个元素。不断进行这个过程，就可以保证左指针 i 的左侧元素都不大于切分元素，右指针 j 的右侧元素都不小于切分元素。当两个指针相遇时，将切分元素 a[l] 和 a[j] 交换位置。</p>
 
-<p><div align="center"> <img src="pics/c4859290-e27d-4f12-becf-e2a5c1f3a275.gif" width="320px"> </div><br></p>
+<p><div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/c4859290-e27d-4f12-becf-e2a5c1f3a275.gif" width="320px"> </div><br></p>
 
-<pre><code class="language-java">
-private int partition(T[] nums, int l, int h) {
-
+<pre><code class="language-java">private int partition(T[] nums, int l, int h) {
     int i = l, j = h + 1;
-
     T v = nums[l];
-
     while (true) {
-
         while (less(nums[++i], v) &amp;&amp; i != h) ;
-
         while (less(v, nums[--j]) &amp;&amp; j != l) ;
-
         if (i &gt;= j)
-
             break;
-
         swap(nums, i, j);
-
     }
-
     swap(nums, l, j);
-
     return j;
-
 }
-
 </code></pre>
 
 <h2 id="3-性能分析">3. 性能分析</h2>
@@ -709,53 +453,29 @@ private int partition(T[] nums, int l, int h) {
 
 <p>三向切分快速排序对于有大量重复元素的随机数组可以在线性时间内完成排序。</p>
 
-<pre><code class="language-java">
-public class ThreeWayQuickSort&lt;T extends Comparable&lt;T&gt;&gt; extends QuickSort&lt;T&gt; {
-
-
+<pre><code class="language-java">public class ThreeWayQuickSort&lt;T extends Comparable&lt;T&gt;&gt; extends QuickSort&lt;T&gt; {
 
     @Override
-
     protected void sort(T[] nums, int l, int h) {
-
         if (h &lt;= l) {
-
             return;
-
         }
-
         int lt = l, i = l + 1, gt = h;
-
         T v = nums[l];
-
         while (i &lt;= gt) {
-
             int cmp = nums[i].compareTo(v);
-
             if (cmp &lt; 0) {
-
                 swap(nums, lt++, i++);
-
             } else if (cmp &gt; 0) {
-
                 swap(nums, i, gt--);
-
             } else {
-
                 i++;
-
             }
-
         }
-
         sort(nums, l, lt - 1);
-
         sort(nums, gt + 1, h);
-
     }
-
 }
-
 </code></pre>
 
 <h2 id="5-基于切分的快速选择算法">5. 基于切分的快速选择算法</h2>
@@ -766,41 +486,23 @@ public class ThreeWayQuickSort&lt;T extends Comparable&lt;T&gt;&gt; extends Quic
 
 <p>该算法是线性级别的，假设每次能将数组二分，那么比较的总次数为 (N+N/2+N/4+..)，直到找到第 k 个元素，这个和显然小于 2N。</p>
 
-<pre><code class="language-java">
-public T select(T[] nums, int k) {
-
+<pre><code class="language-java">public T select(T[] nums, int k) {
     int l = 0, h = nums.length - 1;
-
     while (h &gt; l) {
-
         int j = partition(nums, l, h);
 
-
-
         if (j == k) {
-
             return nums[k];
 
-
-
         } else if (j &gt; k) {
-
             h = j - 1;
 
-
-
         } else {
-
             l = j + 1;
-
         }
-
     }
-
     return nums[k];
-
 }
-
 </code></pre>
 
 <h1 id="堆排序">堆排序</h1>
@@ -811,149 +513,89 @@ public T select(T[] nums, int k) {
 
 <p>堆可以用数组来表示，这是因为堆是完全二叉树，而完全二叉树很容易就存储在数组中。位置 k 的节点的父节点位置为 k/2，而它的两个子节点的位置分别为 2k 和 2k+1。这里不使用数组索引为 0 的位置，是为了更清晰地描述节点的位置关系。</p>
 
-<p><div align="center"> <img src="pics/f48883c8-9d8a-494e-99a4-317d8ddb8552.png" width="170px"> </div><br></p>
+<p><div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/f48883c8-9d8a-494e-99a4-317d8ddb8552.png" width="170px"> </div><br></p>
 
-<pre><code class="language-java">
-public class Heap&lt;T extends Comparable&lt;T&gt;&gt; {
-
-
+<pre><code class="language-java">public class Heap&lt;T extends Comparable&lt;T&gt;&gt; {
 
     private T[] heap;
-
     private int N = 0;
 
-
-
     public Heap(int maxN) {
-
         this.heap = (T[]) new Comparable[maxN + 1];
-
     }
-
-
 
     public boolean isEmpty() {
-
         return N == 0;
-
     }
-
-
 
     public int size() {
-
         return N;
-
     }
-
-
 
     private boolean less(int i, int j) {
-
         return heap[i].compareTo(heap[j]) &lt; 0;
-
     }
-
-
 
     private void swap(int i, int j) {
-
         T t = heap[i];
-
         heap[i] = heap[j];
-
         heap[j] = t;
-
     }
-
 }
-
 </code></pre>
 
 <h2 id="2-上浮和下沉">2. 上浮和下沉</h2>
 
 <p>在堆中，当一个节点比父节点大，那么需要交换这个两个节点。交换后还可能比它新的父节点大，因此需要不断地进行比较和交换操作，把这种操作称为上浮。</p>
 
-<p><div align="center"> <img src="pics/99d5e84e-fc2a-49a3-8259-8de274617756.gif" width="270px"> </div><br></p>
+<p><div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/99d5e84e-fc2a-49a3-8259-8de274617756.gif" width="270px"> </div><br></p>
 
-<pre><code class="language-java">
-private void swim(int k) {
-
+<pre><code class="language-java">private void swim(int k) {
     while (k &gt; 1 &amp;&amp; less(k / 2, k)) {
-
         swap(k / 2, k);
-
         k = k / 2;
-
     }
-
 }
-
 </code></pre>
 
 <p>类似地，当一个节点比子节点来得小，也需要不断地向下进行比较和交换操作，把这种操作称为下沉。一个节点如果有两个子节点，应当与两个子节点中最大那个节点进行交换。</p>
 
-<p><div align="center"> <img src="pics/4bf5e3fb-a285-4138-b3b6-780956eb1df1.gif" width="270px"> </div><br></p>
+<p><div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/4bf5e3fb-a285-4138-b3b6-780956eb1df1.gif" width="270px"> </div><br></p>
 
-<pre><code class="language-java">
-private void sink(int k) {
-
+<pre><code class="language-java">private void sink(int k) {
     while (2 * k &lt;= N) {
-
         int j = 2 * k;
-
         if (j &lt; N &amp;&amp; less(j, j + 1))
-
             j++;
-
         if (!less(k, j))
-
             break;
-
         swap(k, j);
-
         k = j;
-
     }
-
 }
-
 </code></pre>
 
 <h2 id="3-插入元素">3. 插入元素</h2>
 
 <p>将新元素放到数组末尾，然后上浮到合适的位置。</p>
 
-<pre><code class="language-java">
-public void insert(Comparable v) {
-
+<pre><code class="language-java">public void insert(Comparable v) {
     heap[++N] = v;
-
     swim(N);
-
 }
-
 </code></pre>
 
 <h2 id="4-删除最大元素">4. 删除最大元素</h2>
 
 <p>从数组顶端删除最大的元素，并将数组的最后一个元素放到顶端，并让这个元素下沉到合适的位置。</p>
 
-<pre><code class="language-java">
-public T delMax() {
-
+<pre><code class="language-java">public T delMax() {
     T max = heap[1];
-
     swap(1, N--);
-
     heap[N + 1] = null;
-
     sink(1);
-
     return max;
-
 }
-
 </code></pre>
 
 <h2 id="5-堆排序">5. 堆排序</h2>
@@ -964,79 +606,46 @@ public T delMax() {
 
 <p>无序数组建立堆最直接的方法是从左到右遍历数组进行上浮操作。一个更高效的方法是从右至左进行下沉操作，如果一个节点的两个节点都已经是堆有序，那么进行下沉操作可以使得这个节点为根节点的堆有序。叶子节点不需要进行下沉操作，可以忽略叶子节点的元素，因此只需要遍历一半的元素即可。</p>
 
-<p><div align="center"> <img src="pics/c2ca8dd2-8d00-4a3e-bece-db7849ac9cfd.gif" width="210px"> </div><br></p>
+<p><div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/c2ca8dd2-8d00-4a3e-bece-db7849ac9cfd.gif" width="210px"> </div><br></p>
 
 <h4 id="5-2-交换堆顶元素与最后一个元素">5.2 交换堆顶元素与最后一个元素</h4>
 
 <p>交换之后需要进行下沉操作维持堆的有序状态。</p>
 
-<p><div align="center"> <img src="pics/d156bcda-ac8d-4324-95e0-0c8df41567c9.gif" width="250px"> </div><br></p>
+<p><div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/d156bcda-ac8d-4324-95e0-0c8df41567c9.gif" width="250px"> </div><br></p>
 
-<pre><code class="language-java">
-public class HeapSort&lt;T extends Comparable&lt;T&gt;&gt; extends Sort&lt;T&gt; {
-
+<pre><code class="language-java">public class HeapSort&lt;T extends Comparable&lt;T&gt;&gt; extends Sort&lt;T&gt; {
     /**
-
      * 数组第 0 个位置不能有元素
-
      */
-
     @Override
-
     public void sort(T[] nums) {
-
         int N = nums.length - 1;
-
         for (int k = N / 2; k &gt;= 1; k--)
-
             sink(nums, k, N);
 
-
-
         while (N &gt; 1) {
-
             swap(nums, 1, N--);
-
             sink(nums, 1, N);
-
         }
-
     }
-
-
 
     private void sink(T[] nums, int k, int N) {
-
         while (2 * k &lt;= N) {
-
             int j = 2 * k;
-
             if (j &lt; N &amp;&amp; less(nums, j, j + 1))
-
                 j++;
-
             if (!less(nums, k, j))
-
                 break;
-
             swap(nums, k, j);
-
             k = j;
-
         }
-
     }
-
-
 
     private boolean less(T[] nums, int i, int j) {
-
         return nums[i].compareTo(nums[j]) &lt; 0;
-
     }
-
 }
-
 </code></pre>
 
 <h2 id="6-分析">6. 分析</h2>
@@ -1053,25 +662,83 @@ public class HeapSort&lt;T extends Comparable&lt;T&gt;&gt; extends Sort&lt;T&gt;
 
 <h2 id="1-排序算法的比较">1. 排序算法的比较</h2>
 
-<p>| 算法 | 稳定性 | 时间复杂度 | 空间复杂度 | 备注 |</p>
+<table>
+<thead>
+<tr>
+<th align="center">算法</th>
+<th align="center">稳定性</th>
+<th align="center">时间复杂度</th>
+<th align="center">空间复杂度</th>
+<th align="center">备注</th>
+</tr>
+</thead>
 
-<p>| :&mdash;: | :&mdash;: |:&mdash;: | :&mdash;: | :&mdash;: |</p>
+<tbody>
+<tr>
+<td align="center">选择排序</td>
+<td align="center">×</td>
+<td align="center">N<sup>2</sup></td>
+<td align="center">1</td>
+<td align="center"></td>
+</tr>
 
-<p>| 选择排序 | × | N<sup>2</sup> | 1 | |</p>
+<tr>
+<td align="center">冒泡排序</td>
+<td align="center">√</td>
+<td align="center">N<sup>2</sup></td>
+<td align="center">1</td>
+<td align="center"></td>
+</tr>
 
-<p>| 冒泡排序 | √ |  N<sup>2</sup> | 1 | |</p>
+<tr>
+<td align="center">插入排序</td>
+<td align="center">√</td>
+<td align="center">N ~ N<sup>2</sup></td>
+<td align="center">1</td>
+<td align="center">时间复杂度和初始顺序有关</td>
+</tr>
 
-<p>| 插入排序 | √ |  N ~ N<sup>2</sup> | 1 | 时间复杂度和初始顺序有关 |</p>
+<tr>
+<td align="center">希尔排序</td>
+<td align="center">×</td>
+<td align="center">N 的若干倍乘于递增序列的长度</td>
+<td align="center">1</td>
+<td align="center">改进版插入排序</td>
+</tr>
 
-<p>| 希尔排序 | ×  |  N 的若干倍乘于递增序列的长度 | 1 | 改进版插入排序 |</p>
+<tr>
+<td align="center">快速排序</td>
+<td align="center">×</td>
+<td align="center">NlogN</td>
+<td align="center">logN</td>
+<td align="center"></td>
+</tr>
 
-<p>| 快速排序 | ×  | NlogN | logN | |</p>
+<tr>
+<td align="center">三向切分快速排序</td>
+<td align="center">×</td>
+<td align="center">N ~ NlogN</td>
+<td align="center">logN</td>
+<td align="center">适用于有大量重复主键</td>
+</tr>
 
-<p>| 三向切分快速排序 | ×  |  N ~ NlogN | logN | 适用于有大量重复主键|</p>
+<tr>
+<td align="center">归并排序</td>
+<td align="center">√</td>
+<td align="center">NlogN</td>
+<td align="center">N</td>
+<td align="center"></td>
+</tr>
 
-<p>| 归并排序 | √ |  NlogN | N | |</p>
-
-<p>| 堆排序 | ×  |  NlogN | 1 | 无法利用局部性原理|</p>
+<tr>
+<td align="center">堆排序</td>
+<td align="center">×</td>
+<td align="center">NlogN</td>
+<td align="center">1</td>
+<td align="center">无法利用局部性原理</td>
+</tr>
+</tbody>
+</table>
 
 <p>快速排序是最快的通用排序算法，它的内循环的指令很少，而且它还能利用缓存，因为它总是顺序地访问数据。它的运行时间近似为 ~cNlogN，这里的 c 比其它线性对数级别的排序算法都要小。</p>
 
@@ -1092,9 +759,9 @@ public class HeapSort&lt;T extends Comparable&lt;T&gt;&gt; extends Sort&lt;T&gt;
     <section>
     <h4>Share</h4>
     <nav class="nav sharing-icons">
-      <a class="nav-item" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjiakuanzhu.github.io%2f2019%2f10%2falgschap1%2f" title="Share on Facebook"><span class="fa fa-facebook fa-2x" aria-hidden="true"></span></a>
-      <a class="nav-item" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fjiakuanzhu.github.io%2f2019%2f10%2falgschap1%2f" title="Share on LinkedIn"><span class="fa fa-linkedin fa-2x" aria-hidden="true"></span></a>
-      <a class="nav-item" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fjiakuanzhu.github.io%2f2019%2f10%2falgschap1%2f&amp;text=AlgsChap1" title="Tweet this"><span class="fa fa-twitter fa-2x"></span></a>
+      <a class="nav-item" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjiakuanzhu.github.io%2f2019%2f11%2falgschap2%2f" title="Share on Facebook"><span class="fa fa-facebook fa-2x" aria-hidden="true"></span></a>
+      <a class="nav-item" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fjiakuanzhu.github.io%2f2019%2f11%2falgschap2%2f" title="Share on LinkedIn"><span class="fa fa-linkedin fa-2x" aria-hidden="true"></span></a>
+      <a class="nav-item" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fjiakuanzhu.github.io%2f2019%2f11%2falgschap2%2f&amp;text=AlgsChap2" title="Tweet this"><span class="fa fa-twitter fa-2x"></span></a>
     </nav>
   </section>
 
